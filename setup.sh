@@ -2,10 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [[ $1 == '--force' ]]
-then
-    force=1
-fi
+[[ $1 == '--force' ]] && force=1
 
 for merge in merge rebase; do
     merge_options=''
